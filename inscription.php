@@ -16,29 +16,38 @@
     <form action="utilisateur.php" method=POST>
         <fieldset >
             <legend>Donnée de connexion</legend>
-      <div>
-          <label for="username">Nom d'utilisateur</label>
-          <input type="text" id=username autocomplete=off name=username>
+      <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="username">Nom d'utilisateur</label>
+          <div class="col-sm-10">
+          <input class="form-control" type="text" id=username autocomplete=off name=username>
+          </div>
        </div>
-       <div>
-          <label for="password">Mot de passe</label>
-          <input type="password" id=password name=password>
+       <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="password">Mot de passe</label>
+          <div class="col-sm-10">
+          <input class="form-control" type="password" id=password name=password>
+          </div>
        </div>
      </fieldset>
-       <div>
-           <label for="age">Age</label>
-          <input type="number" id=age min=0 max=150 name=age>
+       <div class="mb-3 row">
+           <label class="col-sm-2 col-form-label" for="age">Age</label>
+           <div class="col-sm-10">
+          <input class="form-control" type="number" id=age min=0 max=150 name=age>
+           </div>
        </div>
-       <div>
-        <label for="ville">Ville</label >
-        <select name="ville" id="ville">
-            <option value="" selected desable>Merci de choisir une ville de residence</option>
+       <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label" for="ville">Ville</label >
+    <div class="col-sm-10">
+        <select name="ville" id="ville" class="form-select">
+            <option selected desabled>Merci de choisir une ville de residence</option>
             <option value="marseille">Marseille</option>
             <option value="lyon">Lyon</option>
             <option value="paris">Paris</option>
         </select>
+     </div>
+        </div>
         <div>
-            <label for="remarque">Remarque</label name=remarque>
+            <label class="col-sm-2 col-form-label" for="remarque">Remarque</label name=remarque>
            <textarea id="remarque" col="50" row="150"></textarea>
         </div>
         <div>
@@ -48,6 +57,15 @@
         </div>
         <div>
             Sport préféré
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="football" id="sport1">
+                <label class="form-check-label" for="sport1">
+                     Default checkbox
+               </label>
+
+
+
+
             <input type="checkbox" name=sport1 value=football>Football
             <input type="checkbox" name=sport2  value=handball>Handball
             <input type="checkbox" name=sport3 value =tenis>Tenis

@@ -12,18 +12,18 @@ if(isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'homme') {
 }
 
 
-$username = $_REQUEST['username'];
+
 
 $ville = $_REQUEST['ville'];
 
 
 $age = $_REQUEST['age'];
-
-
-
-
+// ajouter un cookie
+setcookie("nom", $username);
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +39,11 @@ $age = $_REQUEST['age'];
         <?php
         echo " $civilite $username, vous avez $age ans et etes de $ville";
         ?>
-    </p>
+        <a href="test.php">Consulter les cookies</a>
  
 
+    </p>
+    
     
 
 
