@@ -13,7 +13,7 @@
      <p>Bien venu dans notre application php</p>
 
 
-    <form action="utilisateur.php" method=GET>
+    <form action="utilisateur.php" method=POST>
         <fieldset >
             <legend>Donnée de connexion</legend>
       <div>

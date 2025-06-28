@@ -2,22 +2,22 @@
 <?php
 
 $usrname = "Doe";
-if($_GET['username'] != "") {
-    $username = $_GET['username'];
+if($_POST['username'] != "") {
+    $username = $_POST['username'];
 }
 
 $civilite = "madame";
-if(isset($_GET['genre']) and $_GET['genre'] == 'homme') {
+if(isset($_POST['genre']) and $_POST['genre'] == 'homme') {
    $civilite = "monsieur";
 }
 
 
-$username = $_GET['username'];
+$username = $_POST['username'];
 
-$ville = $_GET['ville'];
+$ville = $_POST['ville'];
 
 
-$age = $_GET['age'];
+$age = $_POST['age'];
 
 
 
@@ -37,7 +37,7 @@ $age = $_GET['age'];
     <p>
         Bonjour
         <?php
-        echo "$username, vous avez $age ans et etes de $ville";
+        echo " $civilite $username, vous avez $age ans et etes de $ville";
         ?>
     </p>
  
