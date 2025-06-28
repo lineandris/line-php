@@ -2,22 +2,22 @@
 <?php
 
 $usrname = "Doe";
-if($_POST['username'] != "") {
-    $username = $_POST['username'];
+if($_REQUEST['username'] != "") {
+    $username = $_REQUEST['username'];
 }
 
 $civilite = "madame";
-if(isset($_POST['genre']) and $_POST['genre'] == 'homme') {
+if(isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'homme') {
    $civilite = "monsieur";
 }
 
 
-$username = $_POST['username'];
+$username = $_REQUEST['username'];
 
-$ville = $_POST['ville'];
+$ville = $_REQUEST['ville'];
 
 
-$age = $_POST['age'];
+$age = $_REQUEST['age'];
 
 
 

@@ -8,7 +8,9 @@
 <body>
     <h1 class="text-primary">Page d'acceuil</h1>
     <p>Bien venu dans cette appplication <strong>php</strong></p>
-    <a href="utilisateur?username=Mitroglou&ville=Maeseille"></a>
-    connaitre un peu plus sur la legend?
+    <a href="utilisateur?username=Mitroglou&ville=Maeseille&age=55">
+        connaitre un peu plus sur la legend?
+    </a>
+    
 </body>
 </html>
