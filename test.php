@@ -9,8 +9,19 @@ if (isset($_COOKIE['nom'])) {
 
 }
 if (isset($_SESSION['nom'])) {
-    $nom_s = $_COOKIE['nom'];
+    $nom_s = $_SESSION['nom'];
 }
+
+if (str_contains($_SERVER['HTTP_REFERER'], 'test.php')) {
+    session_unset(); //supprime toutes les variables session
+    session_destroy(); 
+    $nom_c = "";
+    $nom_s = "";
+
+}
+
+
+
 
 ?>
 
@@ -32,7 +43,7 @@ if (isset($_SESSION['nom'])) {
     <p>Nom : <?= $nom_s ?></p>
 
    <p>
-    <a href="vider_session.php">
+    <a href="test.php">
         vider la session
     </a>
    </p>

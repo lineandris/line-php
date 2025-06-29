@@ -3,6 +3,10 @@
 //Démarer la session
 session_start();
 
+var_dump($_SERVER);
+//  'REQUEST_METHOD' => string 'GET' (length=3)
+//  'HTTP_REFERER' => string 'http://localhost/line-php/indexl.php' (length=36)
+
 $usrname = "Doe";
 if($_REQUEST['username'] != "") {
     $username = $_REQUEST['username'];
