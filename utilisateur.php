@@ -1,5 +1,7 @@
 
 <?php
+//Démarer la session
+session_start();
 
 $usrname = "Doe";
 if($_REQUEST['username'] != "") {
@@ -20,7 +22,10 @@ $ville = $_REQUEST['ville'];
 $age = $_REQUEST['age'];
 // ajouter un cookie
 setcookie("nom", $username);
+// ajouter des données dans la session
+$_SESSION['nom'] = $username;
 
+ 
 ?>
 
 
