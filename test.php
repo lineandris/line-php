@@ -47,6 +47,12 @@ if (str_contains($_SERVER['HTTP_REFERER'], 'test.php')) {
         vider la session
     </a>
    </p>
+   <p>
+  
+      <a href="utilisateur.php">
+        Utilisateur
+      </a>
+   </p>
 
 </body>
 </html>
